@@ -1,0 +1,252 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+ 
+body {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  min-width: 970px;
+  background: #e3e3e3;	
+}
+
+ 
+ 
+
+.topbar{
+	padding: 10px;
+	background: #000;	
+	color:#fff;
+}
+.topbar a{
+	color:#fff;
+}
+
+.innav{
+	background: #ccc;	
+	padding: 4px 0px;
+	
+}
+.v_items{
+	display: table;	
+	margin:0px;
+	width:100%;
+}
+
+.v_item{
+	background: #fff;
+    width: 227px;
+	margin:4px;
+	padding: 10px;
+    height: 400px;
+	overflow: hidden;
+	float: left;
+	border: 1px solid #DDD;
+}
+
+.v_item img{
+	border: 1px solid #DDD;
+}
+
+.c_items{
+	clear:both;
+	margin-bottom:20px;
+}
+
+.c_item{
+	border: 1px solid #DDD;
+	background: #fff;
+    /*width: 229px;*/
+	margin:4px;
+	padding: 10px;
+    height: 240px;
+	overflow: hidden;
+	float: left;
+}
+
+.c_item img{
+	border: 1px solid #DDD;
+}
+
+.large{
+	width: 400px;
+	padding: 6px;
+	
+}
+
+.xlarge{
+	width: 700px;
+	padding: 6px;
+}
+
+h1{
+	margin: 10px 0px 0px;
+}
+
+h2{
+	margin: 4px 0px 4px;
+}
+
+h4{
+	border-bottom: 1px solid #DDD;
+	width: 600px;
+	margin: 20px 0px 10px;
+}
+
+.help-block{
+	font-size:12px;
+	margin-top:0px;
+	margin-bottom:2px;
+	color:#666;
+}
+
+.clearfix{
+	margin-bottom:10px;
+}
+
+fieldset{
+	margin-bottom:20px;
+}
+
+
+/* Account for fixed navbar */
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  min-width: 970px;
+}
+
+/* Finesse the page header spacing */
+.page-header {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding-bottom:2px;
+}
+.page-header .lead {
+  margin-bottom: 15px;
+  font-size:16px;
+  color:#999;
+}
+
+h1{
+	font-size:20px;
+}
+
+h3{
+	font-size:16px;
+}
+
+/* Non-responsive overrides
+ *
+ * Utilitze the following CSS to disable the responsive-ness of the container,
+ * grid system, and navbar.
+ */
+
+/* Reset the container */
+.container {
+  max-width: none !important;
+  width: 970px;
+  background: #fff;	
+}
+
+.content{
+  padding-bottom: 25px;
+}
+
+/* Demonstrate the grids */
+.col-xs-4 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid rgba(86,61,124,.2);
+}
+
+.container .navbar-header,
+.container .navbar-collapse {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* Always float the navbar header */
+.navbar-header {
+  float: left;
+}
+
+/* Undo the collapsing navbar */
+.navbar-collapse {
+  display: block !important;
+  height: auto !important;
+  padding-bottom: 0;
+  overflow: visible !important;
+}
+
+.navbar-toggle {
+  display: none;
+}
+.navbar-collapse {
+  border-top: 0;
+}
+
+.navbar-brand {
+  margin-left: -15px;
+}
+
+/* Always apply the floated nav */
+.navbar-nav {
+  float: left;
+  margin: 0;
+}
+.navbar-nav > li {
+  float: left;
+}
+.navbar-nav > li > a {
+  padding: 15px;
+}
+
+/* Redeclare since we override the float above */
+.navbar-nav.navbar-right {
+  float: right;
+}
+
+/* Undo custom dropdowns */
+.navbar .navbar-nav .open .dropdown-menu {
+  position: absolute;
+  float: left;
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-width: 0 1px 1px;
+  border-radius: 0 0 4px 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  color: #333;
+}
+.navbar .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > li > a:focus,
+.navbar .navbar-nav .open .dropdown-menu > .active > a,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #fff !important;
+  background-color: #428bca !important;
+}
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a,
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+  color: #999 !important;
+  background-color: transparent !important;
+}
+
+img{ max-width:100%;}

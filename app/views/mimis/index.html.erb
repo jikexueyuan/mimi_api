@@ -1,0 +1,33 @@
+
+
+<h2>Mimi</h2>
+
+
+<h3>users</h3>
+<ul>
+<%@users.each do |u|%>
+	<li>u:<%=u.id%> - phone:<%=u.phone%> - phone_md5:<%=u.phone_md5%> - code:<%=u.code%> - token:<%=u.token%> - <%=u.created_at%></li>
+<%end%>
+</ul>
+
+<h3>Topic</h3>
+<ul>
+<%@topics.each do |t|%>
+	<li><%=t.mimi_user.phone%>:<%=t.msg%> (<%=t.id%>) (<%=t.created_at%>)</li>
+<%end%>
+</ul>
+
+
+<h3>Reply</h3>
+<ul>
+<%@replies.each do |t|%>
+	<li><%=t.mimi_user.phone%>:<%=t.content%> (<%=t.id%>) (<%=t.created_at%>)</li>
+<%end%>
+</ul>
+
+<h3>Contacts</h3>
+<ul>
+<%@contacts.each do |t|%>
+	<li><%=t.mimi_user.phone%>:<%=t.phone_md5%> (<%=t.id%>) (<%=t.created_at%>)</li>
+<%end%>
+</ul>
